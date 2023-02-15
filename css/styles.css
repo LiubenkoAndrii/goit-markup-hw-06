@@ -735,24 +735,20 @@ img {
   transition: fill var(--tra), border var(--tra), background-color var(--tra);
 }
 
-.modal-close:is(:hover, :focus){
+.modal-close:is(:hover, :focus) {
   border: transparent;
   fill: #ffffff;
   background-color: var(--activity-color);
 }
 
 .modal-title {
-  color: #2E2F42;
+  color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 14px;
-}
-
-.modal-field {
-  margin-bottom: 8px;
 }
 
 .input-wrap {
@@ -764,8 +760,8 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
-  fill: #2E2F42;
-  transition: fill var(--tra)
+  fill: #2e2f42;
+  transition: fill var(--tra);
 }
 
 .modal-input-text {
@@ -776,19 +772,19 @@ img {
   line-height: 1.33;
   letter-spacing: 0.04em;
   cursor: pointer;
-  color: #8E8F99;
+  color: #8e8f99;
 }
 
 .modal-input {
   display: inline-block;
+  margin-bottom: 8px;
   width: 100%;
   height: 40px;
   padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
-  transition: border-color var(--tra)
-  
+  transition: border-color var(--tra);
 }
 
 .modal-input:focus {
@@ -823,6 +819,43 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.check-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+  display: flex;
+  transition: background-color var(--tra);
+  margin-bottom: 24px;
+}
+
+.check-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  margin-right: 8px;
+  fill: transparent;
+  transition: background-color var(--tra), fill var(--tra), border var(--tra);
+}
+
+.modal-check:checked + .check-text span {
+  background-color: #404bbf;
+  border: 1.25px solid #404bbf;
+  border-radius: 2px;
+  fill: #ffffff;
+  transition: background-color var(--tra);
+}
+
+.check-link {
+  color: var(--icon-color);
+  text-decoration: underline;
+}
+
 .modal-send-btn {
   display: block;
   margin: 0 auto;
@@ -847,34 +880,24 @@ img {
   background-color: var(--activity-color);
 }
 
-
 /* ---------FOOTER MODAL */
 
 .footer-modal-wrap {
   margin-left: 80px;
 }
 
-.footer-modal-field {
-  display: inline-block;
-  justify-content: center;
-  margin-right: 24px;
-}
-
-.footer-input-text {
-display: block;
-color: #ffffff;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-cursor: pointer;
+.footer-modal-text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-input {
-  display: block;
-  width: 264px;
   height: 40px;
   margin-top: 16px;
+  margin-right: 24px;
   outline: transparent;
   background-color: transparent;
   border-radius: 4px;
@@ -896,67 +919,27 @@ cursor: pointer;
   letter-spacing: 0.04em;
 }
 
-.check-text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: #757575;
-  display: flex;
-  transition: background-color var(--tra);
-  margin-bottom: 24px;
-}
-
-.check-text span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-width: 16px;
-  height: 16px;
-  border: 1.25px solid #2E2F42;
-  border-radius: 2px;
-  margin-right: 8px;
-  fill: transparent;
-  transition: background-color var(--tra), fill var(--tra), border var(--tra);
-}
-
-.modal-check:checked+.check-text span {
-  background-color: #404bbf;
-  border: 1.25px solid #404BBF;
-  border-radius: 2px;
-  fill: #ffffff;
-  transition: background-color var(--tra);
-}
-
-.check-link {
-  color: var(--icon-color);
-  text-decoration: underline;
-}
-
 .modal-footer-btn {
-position: relative;
-display: inline-block;
-min-width: 164px;
-padding: 8px 24px;
-background-color: var(--icon-color);
-color: #ffffff;
-border-color: transparent;
-border-radius: 4px;
-text-align: left;
-cursor: pointer;
-transition: background-color var(--tra);
+  position: relative;
+  min-width: 165px;
+  padding: 8px 24px;
+  background-color: var(--icon-color);
+  color: #ffffff;
+  border-color: transparent;
+  border-radius: 4px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--tra);
 }
-
 
 .footer-btn-icon {
   position: absolute;
   fill: #ffffff;
   margin-left: 16px;
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
 }
 
 .modal-footer-btn:is(:focus, :hover) {
   background-color: var(--activity-color);
-
 }
