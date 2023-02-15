@@ -895,7 +895,7 @@ img {
 }
 
 .footer-input {
-  height: 40px;
+  min-width: 264px;
   margin-top: 16px;
   margin-right: 24px;
   outline: transparent;
@@ -921,7 +921,7 @@ img {
 
 .modal-footer-btn {
   position: relative;
-  min-width: 165px;
+  min-width: 164px;
   padding: 8px 24px;
   background-color: var(--icon-color);
   color: #ffffff;
